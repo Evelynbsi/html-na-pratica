@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML na Prática</title>
+</head>
+<body>
+
+    <h1 id="titulo">HTML NA PRÁTICA!</h1>
+
+    <hr>
+
+    <h3>Índice: </h3>
+    <ol>
+        <li><a href="#conceitohtml">Conceito de HTML</a></li>
+        <li><a href="#conceitotags">Conceito de Tags HTML</a></li>
+        <li><a href="#tags">Tags e Exemplos HTML</a></li>
+    </ol>
+
+    <hr>    
+
+    <h2 id="conceitohtml">Conceito de HTML:</h2>
+
+    <p>
+        <strong>HTML</strong> (HyperText Markup Language) é uma linguagem de marcação utilizada para criar e estruturar o conteúdo de páginas da web.
+        Ela define a organização dos elementos de um site, como títulos, textos, imagens, links, listas e formulários, por meio de tags.
+        O HTML é interpretado pelos navegadores (como Chrome e Firefox), que exibem o conteúdo de forma visual para o usuário.
+        Ele não possui lógica de programação, sendo responsável apenas pela estrutura e semântica da página,
+        enquanto o <strong>CSS</strong> cuida do visual e o <strong>JavaScript</strong> da interatividade.
+    </p>
+
+    <hr>
+
+    <h2 id="conceitotags">Conceito de Tags HTML:</h2>
+
+    <p>
+        As <strong>tags HTML</strong> são elementos usados para marcar e organizar o conteúdo de uma página web.
+        Elas informam ao navegador como o conteúdo deve ser estruturado e exibido, como títulos, parágrafos, listas, links, imagens e outros componentes.
+        As tags geralmente são escritas entre os sinais
+        <strong>&lt;</strong> (MENOR) e <strong>&gt;</strong> (MAIOR)
+        e, na maioria dos casos, possuem uma tag de abertura e uma de fechamento.
+    </p>
+
+    <hr>
+
+<h2 id="tags">Tags  e Exemplos HTML:</h2>
+
+<hr>
+
+<h3>&lt;html&gt;</h3>
+
+<p>
+    A tag <strong>&lt;html&gt;</strong> é a <strong>tag raiz</strong> de um documento <strong>HTML</strong>.
+    Ela envolve todo o conteúdo da página e informa ao navegador que aquele arquivo é um documento HTML.
+    Dentro dela ficam as tags <strong>&lt;head&gt;</strong> e <strong>&lt;body&gt;</strong>.
+</p>
+
+<p>
+    Essa tag também pode conter o atributo <strong>lang</strong>, que define o idioma da página.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de uso da tag &lt;html&gt;:</h3>
+<pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título da página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Conteúdo da página&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;!DOCTYPE html&gt;</h3>
+
+<p>
+    A declaração <strong>&lt;!DOCTYPE html&gt;</strong> informa ao navegador que o documento
+    está utilizando a versão <strong>HTML5</strong>.
+    Ela deve ser a <strong>primeira linha</strong> do arquivo HTML.
+</p>
+
+<p>
+    Essa declaração evita erros de interpretação e garante que o navegador
+    renderize a página corretamente.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;head&gt;</h3>
+
+<p>
+    A tag <strong>&lt;head&gt;</strong> contém <strong>informações sobre o documento</strong>,
+    que não aparecem diretamente para o usuário.
+    Ela é usada para configurar metadados da página.
+</p>
+
+<p>
+    Dentro do <strong>&lt;head&gt;</strong> ficam tags como:
+    <strong>&lt;meta&gt;</strong>, <strong>&lt;title&gt;</strong> e links para CSS.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+<pre>
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título da página&lt;/title&gt;
+&lt;/head&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;meta charset&gt;</h3>
+
+<p>
+    A tag <strong>&lt;meta charset="UTF-8"&gt;</strong> define o
+    <strong>conjunto de caracteres</strong> da página.
+</p>
+
+<p>
+    Ela garante que acentos e caracteres especiais, como <strong>ç, ã, é</strong>,
+    sejam exibidos corretamente.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+<pre>
+&lt;meta charset="UTF-8"&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;title&gt;</h3>
+
+<p>
+    A tag <strong>&lt;title&gt;</strong> define o <strong>título da página</strong>,
+    que aparece na aba do navegador.
+</p>
+
+<p>
+    Esse título também é muito importante para <strong>SEO</strong> e organização do site.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+<pre>
+&lt;title&gt;Título da página&lt;/title&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;body&gt;</h3>
+
+<p>
+    A tag <strong>&lt;body&gt;</strong> contém <strong>todo o conteúdo visível</strong>
+    da página, como textos, títulos, listas, links e imagens.
+</p>
+
+<p>
+    Tudo o que o usuário vê no navegador está dentro do <strong>&lt;body&gt;</strong>.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+<pre>
+&lt;body&gt;
+    &lt;h1&gt;Meu primeiro projeto&lt;/h1&gt;
+    &lt;p&gt;Conteúdo da página&lt;/p&gt;
+&lt;/body&gt;
+</pre>
+
+<hr>
+
+<h3>&lt;h1&gt; até &lt;h6&gt;</h3>
+
+<p>
+    São tags de <strong>títulos</strong>, usadas para organizar o conteúdo por nível de importância.
+    O <strong>&lt;h1&gt;</strong> representa o título principal da página, enquanto o
+    <strong>&lt;h6&gt;</strong> é o título de menor destaque.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplos de Títulos:</h3>
+<h1>Exemplo h1</h1>
+<h2>Exemplo h2</h2>
+<h3>Exemplo h3</h3>
+<h4>Exemplo h4</h4>
+<h5>Exemplo h5</h5>
+<h6>Exemplo h6</h6>
+
+<hr>
+
+<h3>&lt;p&gt;</h3>
+
+<p>
+    A tag <strong>&lt;p&gt;</strong> é utilizada para criar <strong>parágrafos</strong>,
+    organizando o texto em blocos para facilitar a leitura.
+</p>
+
+<h3>&lt;strong&gt;</h3>
+
+<p>
+    A tag <strong>&lt;strong&gt;</strong> indica que o texto possui <strong>maior importância semântica</strong>,
+    normalmente exibido em negrito.
+</p>
+
+<h3>&lt;i&gt;</h3>
+
+<p>
+    A tag <i>&lt;i&gt;</i> deixa o texto em itálico, sendo usada para dar ênfase a uma palavra ou frase.
+</p>
+
+<h3>&lt;u&gt;</h3>
+
+<p>
+    A tag <u>&lt;u&gt;</u> sublinha o texto.
+</p>
+
+<h3>&lt;mark&gt;</h3>
+
+<p>
+    A tag <mark>&lt;mark&gt;</mark> destaca partes do texto, como se fosse um marca-texto.
+</p>
+
+<h3>&lt;small&gt;</h3>
+
+<p>
+    A tag <small>&lt;small&gt;</small> exibe o texto em tamanho menor,
+    geralmente utilizada para observações ou informações complementares.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Parágrafo e Formatação de Texto:</h3>
+<p>
+    Este é um <strong>texto em negrito</strong>,  
+    um <i>texto em itálico</i>,  
+    um <u>texto sublinhado</u>,  
+    um <mark>texto destacado</mark> e  
+    um <small>texto menor</small>.
+</p>
+
+<hr>
+<h3>&lt;hr&gt;</h3>
+
+<p>
+    A tag <strong>&lt;hr&gt;</strong> cria uma linha horizontal,
+    usada para separar conteúdos dentro da página.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Linha Horizontal:</h3>
+<hr>
+<br>
+<hr>
+
+<h3>&lt;ul&gt;</h3>
+
+<p>
+    A tag <strong>&lt;ul&gt;</strong> cria uma <u>lista não ordenada</u>,
+    exibida com marcadores.
+</p>
+
+<h3>&lt;ol&gt;</h3>
+
+<p>
+    A tag <strong>&lt;ol&gt;</strong> cria uma <u>lista ordenada</u>,
+    exibida com numeração.
+</p>
+
+<h3>&lt;li&gt;</h3>
+
+<p>
+    A tag <strong>&lt;li&gt;</strong> define cada item de uma lista,
+    seja ela ordenada ou não.
+</p>
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Listas:</h3>
+
+<p>Lista não ordenada:</p>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<p>Lista ordenada:</p>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+
+<hr>
+
+<h3>&lt;input&gt;</h3>
+
+<p>
+    A tag <strong>&lt;input&gt;</strong> é utilizada para criar campos
+    onde o usuário pode inserir dados.
+    Ela não possui tag de fechamento e seu comportamento depende do atributo <i>type</i>.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplos de campos com &lt;input&gt;:</h3>
+
+<input type="text" placeholder="Digite seu nome"><br><br>
+
+<input type="email" placeholder="Digite seu e-mail"><br><br>
+
+<input type="password" placeholder="Digite sua senha"><br><br>
+
+<hr>
+
+<h3>&lt;a&gt;</h3>
+
+<p>
+    A tag <strong>&lt;a&gt;</strong> é usada para criar <strong>links</strong>,
+    permitindo a navegação entre páginas ou sites.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Links:</h3>
+
+<p>
+    Link externo:
+    <a href="https://www.dio.me" target="_blank">Site da DIO</a>
+</p>
+
+<p>
+    Link interno:
+    <a href="#titulo">Voltar ao topo</a>
+</p>
+
+<hr>
+<h3>&lt;sub&gt;</h3>
+
+<p>
+    A tag <sub>&lt;sub&gt;</sub> cria um texto subscrito,
+    exibido abaixo da linha normal.
+</p>
+
+<h3>&lt;sup&gt;</h3>
+
+<p>
+    A tag <sup>&lt;sup&gt;</sup> cria um texto sobrescrito,
+    exibido acima da linha normal.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Subscrito e Sobrescrito</h3>
+<p>
+    HTM<sub>L</sub>  
+    <br>
+    <sup>H</sup>TML
+</p>
+
+<hr>
+
+<h3>&lt;blockquote&gt;</h3>
+<p>
+    A tag <strong>&lt;blockquote&gt;</strong> é utilizada para
+    citações longas, geralmente exibidas com recuo.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Citação:</h3>
+<blockquote>
+    "A base do desenvolvimento web começa com um bom HTML."
+</blockquote>
+
+<hr>
+
+<h3>&lt;font&gt;</h3>
+<p>
+    A tag <font color="blue">font</font> permite alterar cor e tipo da fonte.
+    <br>
+    <strong>Obs:</strong> É uma tag antiga e não recomendada atualmente, mas foi utilizada neste projeto para fins de estudo.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Fonte:</h3>
+<p>
+    <font color="green" face="Arial">
+        Texto utilizando a tag font para fins de estudo.
+    </font>
+</p>
+
+<hr>
+<h3>&lt;del&gt;</h3>
+
+<p>
+    A tag <del>&lt;del&gt;</del> indica um texto que foi removido ou desconsiderado.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Texto Removido:</h3>
+<p>
+    Texto <del>removido</del> como exemplo da tag &lt;del&gt;.
+</p>
+
+<hr>
+
+<h3>&lt;abbr&gt;</h3>
+
+<p>
+    A tag <abbr title="HyperText Markup Language">HTML</abbr> define abreviações,
+    exibindo o significado completo ao passar o mouse.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Abreviação:</h3>
+<p>
+    <abbr title="HyperText Markup Language">HTML</abbr> é a base da web.
+</p>
+
+<hr>
+
+<h3>&lt;br&gt;</h3>
+
+<p>
+    A tag <strong>&lt;br&gt;</strong> é utilizada para inserir uma quebra de linha
+    dentro de um texto, sem criar um novo parágrafo.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo de Quebra de Linha:</h3>
+<p>
+    Linha 1<br>
+    Linha 2<br>
+    Linha 3
+</p>
+
+<hr>
+
+<h3>&lt;pre&gt;</h3>
+<p>
+    A tag <strong>&lt;pre&gt;</strong> exibe um texto pré-formatado,
+    mantendo espaços e quebras de linha exatamente como foram escritos no código HTML.
+    É muito utilizada para mostrar exemplos de código.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+
+<pre>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Exemplo&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Olá, mundo!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<hr>
+
+<h3>Entidades HTML (&lt; e &gt;)</h3>
+
+<p>
+    Os símbolos <strong>&lt;</strong> e <strong>&gt;</strong> são utilizados para
+    representar os sinais de menor e maior dentro do HTML.
+    Para exibí-los corretamente no texto, utilizamos as entidades
+    <strong>&amp;lt;</strong> e <strong>&amp;gt;</strong>.
+</p>
+
+<h3 style = "color:rgb(223, 25, 25)">Exemplo:</h3>
+
+<p>
+    Para criar uma tag de parágrafo usamos: &lt;p&gt;Texto&lt;/p&gt;
+</p>
+
+<hr>
+
+<h2>Conclusão:</h2>
+
+<p>
+    Neste projeto foi possível compreender, na prática, os principais conceitos do
+    <strong>HTML</strong> e a função de suas tags na estruturação de páginas web.
+    Cada elemento apresentado demonstra como o HTML é responsável pela organização,
+    semântica e base visual de um site.
+</p>
+
+<p>
+    Através da explicação tag por tag, foi possível entender como títulos, parágrafos,
+    listas, links, formulários e elementos de formatação trabalham juntos para construir
+    uma página funcional e bem estruturada.
+</p>
+
+<p>
+    Este estudo reforça que o HTML é o primeiro passo no desenvolvimento front-end,
+    sendo essencial para a criação de páginas acessíveis, organizadas e compatíveis
+    com diferentes navegadores.
+</p>
+
+<p>
+    Com esse conhecimento, torna-se mais fácil evoluir para o uso de
+    <strong>CSS</strong> para estilização e <strong>JavaScript</strong> para interatividade,
+    ampliando as possibilidades no desenvolvimento web.
+</p>
+
+<hr>
+
+<p>
+    <small>
+        Projeto desenvolvido por Evelyn Barros, como parte do curso de Introdução ao HTML da
+        <abbr title="Digital Innovation One">DIO</abbr>.
+    </small>
+</p>
+
+</body>
+</html>
